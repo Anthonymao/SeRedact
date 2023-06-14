@@ -13,7 +13,11 @@ def load_test_vectors(name):
             if len(test_case) == 1:
                 continue
             assert len(test_case) == 3
-
+            
+            if len(test_case) == 1:
+                continue
+            assert len(test_case) == 3
+            
             prevouts = {}
             for json_prevout in test_case[0]:
                 assert len(json_prevout) == 3
